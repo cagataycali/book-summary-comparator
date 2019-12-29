@@ -1,0 +1,23 @@
+{
+  "name": "book-summary-comparator",
+  "version": "1.0.0",
+  "description": "The initial code extract keywords by books summary, rate each other by Dice's Coefficient algorithm.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Çağatay Çalı",
+  "license": "ISC",
+  "bin": {
+    "book-summary-comparator": "./index.js"
+  },
+  "dependencies": {
+    "cli-progress": "^3.4.0",
+    "colors": "^1.4.0",
+    "commander": "^4.0.1",
+    "flexsearch": "^0.6.32",
+    "inquirer": "^7.0.1",
+    "nedb": "^1.8.0",
+    "word-extractor": "^0.3.0"
+  }
+}
