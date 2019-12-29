@@ -1,6 +1,6 @@
 {
   "name": "book-summary-comparator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The initial code extract keywords by books summary, rate each other by Dice's Coefficient algorithm.",
   "main": "index.js",
   "scripts": {
