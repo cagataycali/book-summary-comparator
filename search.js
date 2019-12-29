@@ -8,7 +8,7 @@ const db = require('./db.json')
 
 const read = file => {
     try {
-        return fs.readFileSync(`books/${file}.txt`, 'utf-8')
+        return fs.readFileSync(`./books/${file}.txt`, 'utf-8')
     } catch (err) {
         return ""
     }

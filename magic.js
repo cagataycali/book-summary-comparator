@@ -10,7 +10,7 @@ loader.start(db.length, 0);
 
 const read = file => {
     try {
-        return fs.readFileSync(`books/${file}.txt`, 'utf-8')
+        return fs.readFileSync(`./books/${file}.txt`, 'utf-8')
     } catch (err) {
         return ""
     }

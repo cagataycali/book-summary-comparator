@@ -27,7 +27,6 @@
   "dependencies": {
     "cli-progress": "^3.4.0",
     "colors": "^1.4.0",
-    "commander": "^4.0.1",
     "flexsearch": "^0.6.32",
     "inquirer": "^7.0.1",
     "nedb": "^1.8.0",
