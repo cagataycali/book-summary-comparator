@@ -2,20 +2,22 @@ const inquirer = require('inquirer')
 const colors = require('colors')
 const FlexSearch = require("flexsearch")
 const index = new FlexSearch("speed")
+const pkgDir = require('pkg-dir');
 
 const fs = require('fs')
 const db = require('./db.json')
 
-const read = file => {
+const read = async file => {
     try {
-        return fs.readFileSync(`./books/${file}.txt`, 'utf-8')
+        const rootDir = await pkgDir(__dirname);
+        return fs.readFileSync(`${rootDir}/books/${file}.txt`, 'utf-8')
     } catch (err) {
         return ""
     }
 }
 
 // Index all docs.
-db.map(row => index.add(row.id, read(row.id)))
+db.map(async row => index.add(row.id, (await read(row.id))))
 
 module.exports = _ => {
     console.log('Search indexing might be take time...')

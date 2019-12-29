@@ -30,6 +30,7 @@
     "flexsearch": "^0.6.32",
     "inquirer": "^7.0.1",
     "nedb": "^1.8.0",
+    "pkg-dir": "^4.2.0",
     "word-extractor": "^0.3.0"
   }
 }
