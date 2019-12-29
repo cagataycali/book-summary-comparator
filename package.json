@@ -11,6 +11,19 @@
   "bin": {
     "book-summary-comparator": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cagataycali/book-summary-comparator.git"
+  },
+  "keywords": [
+    "book",
+    "summary",
+    "comparator"
+  ],
+  "bugs": {
+    "url": "https://github.com/cagataycali/book-summary-comparator/issues"
+  },
+  "homepage": "https://github.com/cagataycali/book-summary-comparator#readme",
   "dependencies": {
     "cli-progress": "^3.4.0",
     "colors": "^1.4.0",
